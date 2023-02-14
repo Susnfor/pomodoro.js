@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/0cdd9a4e1f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="./script.js"></script>
+    <section class="main">
+        <div class="top-container">
+            <div class="top">
+                <h1>Pomodoro</h1>
+            </div>
+        <div class="middle-container">
+
+            <div class="panelcenter">
+                <!-- <div class="left"></div> -->
+                <div class="panel">
+                        <p id="work">Work</p>
+                        <p id="shortbreak">Short Break</p>
+                        <p id="longbreak">Long Break</p>
+                </div>
+                <!-- <div class="right"></div> -->
+            </div>
+            
+            <div class="timer-container">
+                <div class="timer">
+                    <div class="shape">
+                        <div class="time">
+                            <p id="minutes"></p>
+                            <p>:</p>
+                            <p id="seconds"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings">
+                    <button id="start" onclick="start()">start</button>
+                    <!-- <button id="stop" onclick="toggle()"><i class="fa-solid fa-stop"></i></button> -->
+                    <a href="#" id="reset"><i class="fa-solid fa-rotate-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

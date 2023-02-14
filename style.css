@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Press+Start+2P&display=swap');
+
+
+*{
+    text-transform: uppercase; 
+    margin: 0;
+    padding: 0;
+    color: blanchedalmond;
+}
+.main{
+    background-color: rgba(159, 176, 186,0.8);
+    min-height: 100vh;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-content: center; */
+}
+
+.top{
+    padding-top: 20px;
+    font-size: 30px;
+    font-family: 'Press Start 2P';
+    display: flex;
+    justify-content: center;
+
+}
+
+.panelcenter{
+    height: 10vh;
+    font-size: 10px;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 10px;
+}
+
+.panel{
+    border-radius: 10px;
+    padding: 5px 20px;
+    -webkit-box-shadow: 0px 0px 15px 10px #ffffff; 
+    box-shadow: 0px 0px 15px 10px #ffffff;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+
+.panel p{
+    padding: 0px 20px;
+    opacity: 0.8;
+    transition: 1s ease-in;
+}
+
+.panel p.active{
+    opacity: 1;
+    color: blanchedalmond;
+
+}
+.timer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    
+}
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:70vh;
+    width: 70vh;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 15px 10px #ffffff; 
+    box-shadow: 0px 0px 15px 10px #ffffff;
+}
+.shape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blanchedalmond;
+    height:68vh;
+    width: 68vh;
+    border-radius: 50%;
+    position: relative;
+}
+.shape::before{
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    content:" ";
+    background-color: rgba(159, 176, 186, 10.5);
+}
+
+.time{
+    position: relative;
+    font-size: 5.6rem;
+    display: flex;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.time p:nth-of-type(2){
+    position: relative;
+    top: -.5rem;
+    margin-inline:1rem;
+}
+
+.settings{
+    margin-top: 3rem;
+}
+
+.settings button{
+    border: solid;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 50px;
+    color: white;
+    
+
+}
+
+.settings #reset{
+    display: none;
+
+}
